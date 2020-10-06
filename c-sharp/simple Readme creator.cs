@@ -2,7 +2,7 @@
         {
             try
             {
-                string readMeFilePath = "/Managed/Mods/Assets/Archie/";
+                string readMeFilePath = "/ReadmeFolder/";
                 if (!System.IO.File.Exists(Application.dataPath + readMeFilePath + "Readme.txt"))
                 {
                     System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(Application.dataPath + readMeFilePath + "Readme.txt");
@@ -11,7 +11,7 @@
                     streamWriter.WriteLine(" - Hat alb,met,nrm");
                     streamWriter.WriteLine();
                     streamWriter.WriteLine("The following are directories that are used:");
-                    streamWriter.WriteLine("Textures = /Managed/Mods/Assets/Archie/Textures/NAMEOFINGAMEIMG.png");
+                    streamWriter.WriteLine("Textures = /TexturesFolder/NAMEOFINGAMEIMG.png");
                     streamWriter.WriteLine(" - Only supported format is '.png'");
                     streamWriter.Close();
                     Log.logger.Log("ReadMe Created!");
