@@ -24,4 +24,4 @@ function interactWithDB(){
   setTimeout(function(){
     connection.end();
   },3000);
- }
+}
