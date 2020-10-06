@@ -8,21 +8,20 @@ mysqlLoginData = {
 function interactWithDB(){
 
   var connection = mysql.createConnection({
-			host : mysqlLoginData.host,
-			user : mysqlLoginData.user,
-			password : mysqlLoginData.password,
-			database : mysqlLoginData.database,
-		});
+	host : mysqlLoginData.host,
+	user : mysqlLoginData.user,
+	password : mysqlLoginData.password,
+	database : mysqlLoginData.database,
+  });
 			
-		connection.connect(err => {
-			if(err) console.log(err);
-		});
+  connection.connect(err => {
+    if(err) console.log(err);
+  });
 
-		connection.query(`SELECT * sampleTable`, (err,rows) => {
+  connection.query(`SELECT * sampleTable`, (err,rows) => {
       // Do something with data
-		});
-
-		setTimeout(function(){
-			connection.end();
-		},3000);
+  });
+  setTimeout(function(){
+    connection.end();
+  },3000);
  }
