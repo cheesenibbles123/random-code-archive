@@ -4,7 +4,7 @@ public static void main(string[] args){
   int smallDiscountAge = 30;
   
   System.out.println("Please enter your age: ");
-  userAge = input.nextInt();
+  int userAge = input.nextInt();
   
   if (largeDiscountAge <= userAge){
     System.out.println("You are entitled to the largest discount!");
