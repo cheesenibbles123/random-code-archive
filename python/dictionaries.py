@@ -16,6 +16,7 @@ def add_sales(album, date, daily_sales):
     album["total_sales"] = tempSales + daily_sales
     if album["first_date_recorded"] == None:
         album["first_date_recorded"] = date
+        album["last_date_recorded"] = date
     else:
         if (album["last_date_recorded"] < date):
             album["last_date_recorded"] = date
