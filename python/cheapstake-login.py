@@ -1,8 +1,8 @@
 username = "user"
 password = "password"
 
-inputPassword = input("Please enter your password: ")
 inputUsername = input("Please enter your username: ")
+inputPassword = input("Please enter your password: ")
 
 if username == inputUsername:
   if password == inputPassword"
