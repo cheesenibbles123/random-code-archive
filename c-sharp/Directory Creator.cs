@@ -4,6 +4,4 @@
             {
                 Directory.CreateDirectory(Application.dataPath + texturesFilePath);
             }
-            StartCoroutine(loadBadgeFileIE());
-            logHigh("Finished Coroutines!");
         }
